@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #04020f;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slide_container .slide_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.slide_container .slide_box .slide_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.slide_container .slide_box .slide_item > div {
+  width: 50%;
+}
+.slide_container .slide_box .slide_item .s_desc {
+  padding: 0 1rem;
+}
+.slide_container .slide_box .slide_item .s_desc h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: left;
+  color: #fe97ad;
+}
+@media (max-width: 780px) {
+  .slide_container .slide_box .slide_item .s_desc h1 {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .slide_container .slide_box .slide_item .s_desc h1 {
+    font-size: 1.25rem;
+  }
+}
+.slide_container .slide_box .slide_item .s_desc p {
+  font-size: 1.2rem;
+  font-family: "Mukta";
+  text-align: left;
+  color: #efc4c4;
+  margin-top: 1.5rem;
+}
+@media (max-width: 780px) {
+  .slide_container .slide_box .slide_item .s_desc p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .slide_container .slide_box .slide_item .s_desc p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 780px) {
+  .slide_container .slide_box .slide_item .s_desc {
+    padding: 0 1rem;
+  }
+}
+.slide_container .slide_box .slide_item .s_pic {
+  padding: 0 1rem;
+}
+.slide_container .slide_box .slide_item .s_pic img {
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .slide_container .slide_box .slide_item .s_pic {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 780px) {
+  .slide_container .slide_box .slide_item {
+    flex-direction: column-reverse;
+  }
+  .slide_container .slide_box .slide_item > div {
+    width: 100%;
+  }
+}
+.slide_container .slide_box .hidden_slide {
+  display: none;
+}
+.slide_container .slide_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.slide_container .slide_nav span {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #DE2E54;
+  transition: 0.3s ease;
+  margin: 0 1rem;
+}
+.slide_container .slide_nav span:hover {
+  background-color: rgb(252, 101, 151);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.slide_container .slide_nav span img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .slide_container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

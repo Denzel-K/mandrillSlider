@@ -1,0 +1,125 @@
+@import 'variables';
+
+.slide_container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .slide_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .slide_item {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      & > div {
+        width: 50%;
+      }
+
+      .s_desc{
+        padding: 0 1rem;
+
+        h1{
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: 'Raleway';
+          text-align: left;
+          color: $text-light-pink;
+
+          @media(max-width: 780px){
+            font-size: 1.65rem;
+            text-align: center;
+          }
+          @media(max-width: 600px){
+            font-size: 1.25rem;
+          }
+        }
+        p{
+          font-size: 1.2rem;
+          font-family: 'Mukta';
+          text-align: left;
+          color: $text-light-fade;
+          margin-top: 1.5rem;
+
+          @media(max-width: 780px){
+            font-size: 1rem;
+            text-align: center;
+          }
+          @media(max-width: 600px){
+            font-size: 1rem;
+          }
+        }
+
+        @media(max-width: 780px){
+          padding: 0 1rem;
+        }
+      }
+
+      .s_pic{
+        padding: 0 1rem;
+
+        img{
+          width: 100%;
+        }
+
+        @media(max-width: 780px){
+          padding: 0 1rem;
+        }
+      }
+
+      @media(max-width: 780px){
+        flex-direction: column-reverse;
+
+        & > div {
+          width: 100%;
+        }
+      }
+    }
+
+    .hidden_slide{
+      display: none;
+    }
+  }
+
+  .slide_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    //padding: 0 1rem;
+
+    span{
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+      border-radius: 50%;
+      background-color: $primary;
+      transition: 0.3s ease;
+      margin: 0 1rem;
+
+      &:hover{
+        background-color: rgb(252, 101, 151);
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: 600px){
+    width: 100%;
+  }
+}
